@@ -1,0 +1,17 @@
+services:
+  sentinel-x:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: sentinel_x_container
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    cap_add:
+      - NET_ADMIN  # Needed for network packet actions in production
+    environment:
+      - TWILIO_ACCOUNT_SID
+      - TWILIO_AUTH_TOKEN
+      - TWILIO_FROM_NUMBER
+    restart: on-failure

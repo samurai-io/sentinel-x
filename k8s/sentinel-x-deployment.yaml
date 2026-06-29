@@ -1,0 +1,49 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sentinel-x-deployment
+  labels:
+    app: sentinel-x
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: sentinel-x
+  template:
+    metadata:
+      labels:
+        app: sentinel-x
+    spec:
+      containers:
+      - name: sentinel-x
+        image: sentinel-x:latest
+        imagePullPolicy: IfNotPresent
+        securityContext:
+          runAsNonRoot: true
+          runAsUser: 10001
+          allowPrivilegeEscalation: false
+          capabilities:
+            drop:
+            - ALL
+            add:
+            - NET_ADMIN
+        resources:
+          limits:
+            cpu: "1"
+            memory: 512Mi
+          requests:
+            cpu: 250m
+            memory: 128Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: sentinel-x-service
+spec:
+  selector:
+    app: sentinel-x
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
+  type: ClusterIP

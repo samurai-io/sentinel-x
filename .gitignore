@@ -1,0 +1,38 @@
+# CMake build directories and caches
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+install_manifest.txt
+
+# Executables
+sentinel_x
+build/sentinel_x
+
+# Object files and library files
+*.o
+*.a
+*.so
+*.dylib
+
+# Environment variables and secrets
+.env
+.env.*
+secrets/
+*.key
+*.pem
+
+# Logs and temp files
+*.log
+*.tmp
+temp/
+
+# IDE and Editor settings
+.vscode/
+.idea/
+.agents/
+.gemini/
+*.swp
+*~
+.DS_Store
