@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/samurai/Projects/sentinel-x/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

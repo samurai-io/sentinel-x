@@ -1,0 +1,3 @@
+/home/samurai/Projects/sentinel-x/build/CMakeFiles/sentinel_x.dir
+/home/samurai/Projects/sentinel-x/build/CMakeFiles/edit_cache.dir
+/home/samurai/Projects/sentinel-x/build/CMakeFiles/rebuild_cache.dir

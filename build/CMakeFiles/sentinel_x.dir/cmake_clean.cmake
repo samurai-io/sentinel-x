@@ -1,0 +1,40 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/sentinel_x.dir/link.d"
+  "CMakeFiles/sentinel_x.dir/src/common/hashmap.c.o"
+  "CMakeFiles/sentinel_x.dir/src/common/hashmap.c.o.d"
+  "CMakeFiles/sentinel_x.dir/src/common/log.c.o"
+  "CMakeFiles/sentinel_x.dir/src/common/log.c.o.d"
+  "CMakeFiles/sentinel_x.dir/src/common/notification.c.o"
+  "CMakeFiles/sentinel_x.dir/src/common/notification.c.o.d"
+  "CMakeFiles/sentinel_x.dir/src/core/filter.c.o"
+  "CMakeFiles/sentinel_x.dir/src/core/filter.c.o.d"
+  "CMakeFiles/sentinel_x.dir/src/core/live_capture.c.o"
+  "CMakeFiles/sentinel_x.dir/src/core/live_capture.c.o.d"
+  "CMakeFiles/sentinel_x.dir/src/core/state_table.c.o"
+  "CMakeFiles/sentinel_x.dir/src/core/state_table.c.o.d"
+  "CMakeFiles/sentinel_x.dir/src/dpi/dns_parser.c.o"
+  "CMakeFiles/sentinel_x.dir/src/dpi/dns_parser.c.o.d"
+  "CMakeFiles/sentinel_x.dir/src/dpi/dpi.c.o"
+  "CMakeFiles/sentinel_x.dir/src/dpi/dpi.c.o.d"
+  "CMakeFiles/sentinel_x.dir/src/dpi/http_parser.c.o"
+  "CMakeFiles/sentinel_x.dir/src/dpi/http_parser.c.o.d"
+  "CMakeFiles/sentinel_x.dir/src/dpi/tls_parser.c.o"
+  "CMakeFiles/sentinel_x.dir/src/dpi/tls_parser.c.o.d"
+  "CMakeFiles/sentinel_x.dir/src/ids_ips/ids.c.o"
+  "CMakeFiles/sentinel_x.dir/src/ids_ips/ids.c.o.d"
+  "CMakeFiles/sentinel_x.dir/src/ids_ips/ips.c.o"
+  "CMakeFiles/sentinel_x.dir/src/ids_ips/ips.c.o.d"
+  "CMakeFiles/sentinel_x.dir/src/main.c.o"
+  "CMakeFiles/sentinel_x.dir/src/main.c.o.d"
+  "CMakeFiles/sentinel_x.dir/src/waf/waf.c.o"
+  "CMakeFiles/sentinel_x.dir/src/waf/waf.c.o.d"
+  "CMakeFiles/sentinel_x.dir/src/zero_trust/trust_engine.c.o"
+  "CMakeFiles/sentinel_x.dir/src/zero_trust/trust_engine.c.o.d"
+  "sentinel_x"
+  "sentinel_x.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/sentinel_x.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
